@@ -1,0 +1,554 @@
+.auth_bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+}
+
+.auth_bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+body{
+    margin: 0;
+}
+.auth_page_wrapper {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    min-width: 1200px;
+    overflow: auto;
+    padding: 0;
+    font-family: 'Microsoft YaHei';
+    font-size: 13px;
+    color: #676A6C;
+}
+
+.auth_login_content {
+    height: calc(100%);
+    position: relative;
+}
+.mainbg{
+    width: 100%;
+    height: 100%;
+}
+.bg_remark{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    color:#fff;
+    font-size: 18px;
+}
+.auth_login_content .auth_login_left {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(255,255,255,0.6);
+}
+.dz_login_help{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 210px;
+}
+.dz_login_help div{
+    width: 70px;
+    float: left;
+    text-align: center;
+}
+.dz_login_help div img{
+    width: 24px;
+}
+.dz_login_help div p{
+    margin: 6px 0 0;
+    color: #666;
+}
+.auth_login_left .auth_others {
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    display: none;
+}
+.auth_logo{
+    margin-top: 100px;
+    width: 300px;
+    margin-left: calc(50% - 150px);
+}
+.auth_logo img{
+    width: 100%;
+}
+.auth_login_left .auth_others a .auth_icon_bg {
+    float: left;
+    height: 34px;
+    background-color: rgba(255, 255, 255, .8);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8ffffff, endColorstr=#C8ffffff);
+}
+
+.auth_login_left .auth_others a .auth_icon_bg:hover {
+    background-color: #ffffff;
+}
+
+.auth_login_left .auth_others a i {
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+}
+
+.auth_icon_user {
+    background: url("../img/user.jpg") no-repeat 8px 8px;
+    background-size: 50% 50%;
+}
+.auth_icon_pwd {
+    background: url("../img/password.jpg") no-repeat 8px 8px;
+    background-size: 50% 50%;
+}
+.auth_icon_bar {
+    background: url("../img/usstbackground.jpg") -43px -73px no-repeat;
+}
+
+.auth_login_content .auth_login_right {
+    width: 50%;
+    float: right;
+}
+
+.auth_login_left .auth_others h4 {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.auth_login_left .auth_others ul, .auth_tab_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.auth_login_left .auth_others li {
+    margin-top: 15px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.auth_login_left .auth_others li a {
+    text-decoration: none;
+}
+
+.auth_login_left .auth_others .auth_icon_text {
+    width: 225px;
+    padding-left: 15px;
+    color: #fff;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, .4);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff, endColorstr=#66ffffff);
+    display: inline-block;
+}
+
+.auth_login_left .auth_others .auth_icon_text:hover {
+    background-color: rgba(255, 255, 255, .6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+}
+
+.auth_tab {
+    width: 339px;
+    margin-left: calc(50% - 169px);
+}
+
+.auth_tab_links li {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    float: left;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.auth_tab_links li span {
+    color: #ffffff;
+}
+
+.auth_tab_links li.selected {
+}
+
+.auth_tab_links li.selected span {
+    color: #be2136;
+}
+.dzsmdl{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+.dzsmdl img{
+    width: 20px;
+    position: relative;
+    top: 4px;
+}
+.auth_tab_content {
+    padding: 25px 25px 22px 25px;
+    /*background-color: rgba(255, 255, 255, .9);*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5ffffff, endColorstr=#E5ffffff);
+    min-height: 205px;
+}
+
+.auth_tab_content_item {
+    position: relative;
+}
+
+.auth_tab_content_item p {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
+
+.auth_tab_content_item p label {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.auth_icon {
+    background-color: rgba(242, 242, 242,0.8);
+    border: none;
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+.auth_input {
+    border: none;
+    background-color: rgba(242, 242, 242,0.8);
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 229px;
+    margin: 0;
+    color: #676a6c;
+}
+
+.auth_input:focus {
+    outline: none;
+}
+
+.auth_login_btn {
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+.primary {
+    background-color: #be2136;
+    border-color: #be2136;
+}
+
+.primary:hover {
+    background-color: #be2136;
+    border-color: #be2136;
+}
+
+.warning {
+    background-color: #EBDC99;
+    border-color: #EBDC99;
+    color: #676a6c;
+}
+
+.warning:hover {
+    background-color: #EEDA80;
+    border-color: #EEDA80;
+    color: #333;
+}
+
+.abs_right {
+    position: absolute;
+    right: 0;
+}
+
+.full_width {
+    display: block;
+}
+
+.auth_login_forgetp {
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin-top: 5px;
+}
+
+
+.auth_login_forgetp small {
+    font-size: 12px;
+}
+
+.auth_error {
+    position: absolute;
+    color: #ED5565;
+    font-size: 12px;
+    top: 33px;
+    left: 45px;
+}
+
+.clearfloat {
+    clear: both;
+}
+.captcha-img {
+    width: 92px;
+    height: 34px;
+    margin-left: 3px;
+    vertical-align: top;
+}
+
+.captcha-input {
+    width: 65px;
+}
+
+.dynamicCode {
+    width: 90px;
+    padding: 6px 8px;
+    margin-top: 0px;
+    cursor: pointer;
+    font-family: 'Microsoft YaHei';
+}
+
+.login-ul-li-full{
+    width: 100% !important;
+}
+
+/*二维码样式*/
+#qrCodeImage{
+    padding:2px;
+    border: 1px solid #CCC;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.3)
+}
+
+.qrCenter{
+    text-align: center;
+}
+
+#appCodeRefresh {
+    position: absolute;
+    top: 0;
+    left: 76px;
+    width: 117px;
+    height: 118px;
+    cursor: pointer;
+}
+.appCode-mask {
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#appCodeLoginLoad {
+    position: absolute;
+    top: 0;
+    left: 76px;
+    width: 117px;
+    height: 118px;
+}
+.appCode-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 44px;
+    text-align: center;
+    color: #fff;
+    line-height: 26px;
+}
+.appCode-wrap {
+    text-align: center;
+    color: #fff;
+    line-height: 26px;
+}
+.auth-language {
+    float: right;
+    margin-top: 18px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.auth-language-select {
+    float: right;
+    padding-left: 16px;
+}
+
+
+.right-area{
+    float:right;
+    width:392px;
+    height:650px;
+}
+.right-area h3{
+    height:38px;
+    line-height:30px;
+    color:#666666;
+    font-size:20px;
+    font-family:"微软雅黑";
+}
+.log-portal-news{
+    width:392px;
+    height:265px;
+    background:url(/img/dzbg.jpg) no-repeat;
+}
+.log-portal-news .title{
+    height:28px;
+}
+.log-portal-news .title li{
+    float:left;
+    width:194px;
+    height:28px;
+    text-align:center;
+    font-size:14px;
+    font-family:"微软雅黑";
+}
+.log-portal-news .title li a{
+    display:inline-block;
+    margin-top:3px;
+}
+.log-portal-news .title li.right{
+    background:url(/img/cha2.jpg) no-repeat right top;
+    border-bottom:1px solid #d4d4d4;
+    border-left:1px solid #d4d4d4;
+}
+
+.log-portal-news .title li.left{
+    background:url(/img/cha2.jpg) no-repeat left top;
+    border-bottom:1px solid #d4d4d4;
+    border-right:1px solid #d4d4d4;
+}
+.news-list{
+    /*margin-top:10px;*/
+}
+.news-list li{
+    margin-left:20px;
+    height:27px;
+    line-height:27px;
+}
+.news-list li a{
+    color:#7d7d7d;
+}
+.news-list li a:hover{
+    color:#0068b8;
+}
+.news-list li img{
+    display:inline-block;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.log-portal-notice{
+    width:392px;
+    height:258px;
+    background:url(/img/dzbg.jpg) no-repeat;
+}
+.log-portal-notice .title{
+    height:28px;
+}
+.log-portal-notice .title li{
+    float:left;
+    width:128px;
+    height:28px;
+    text-align:center;
+    font-size:14px;
+    font-family:"微软雅黑";
+}
+.log-portal-notice .title li a{
+    display:inline-block;
+    margin-top:3px;
+}
+.log-portal-notice .title li.middle{
+    background:url(/img/cha2.jpg) no-repeat left top;
+    border-bottom:1px solid #d4d4d4;
+    border-left:1px solid #d4d4d4;
+}
+.log-portal-notice .title li.right{
+    background:url(/img/cha2.jpg) no-repeat right top;
+    border-bottom:1px solid #d4d4d4;
+    border-left:1px solid #d4d4d4;
+}
+.log-portal-notice .title li.left{
+    background:url(/img/cha2.jpg) no-repeat left top;
+    border-bottom:1px solid #d4d4d4;
+    border-right:1px solid #d4d4d4;
+}
+.notice-list{
+    /*margin-top:10px;*/
+}
+.notice-list li{
+    margin-left:20px;
+    /*height:27px;*/
+    line-height:27px;
+}
+.notice-list li a{
+    color:#7d7d7d;
+}
+.notice-list li a:hover{
+    color:#0068b8;
+}
+.notice-list li img{
+    display:inline-block;
+    margin-right:5px;
+
+}
+#dlBtn{
+    background:url(/img/dzlogo.png) no-repeat right top;
+    border:0px;
+    width: 66px;
+    height: 22px;
+    cursor: pointer;
+}
+#getPwd{
+    background:url(/img/dzlogo.png) no-repeat right top;
+    border:0px;
+    width: 80px;
+    height: 22px;
+    cursor: pointer;
+    display: inline-block;
+}
+.liImg{
+    background:url(/img/dzlogo.png) no-repeat right top;
+    width: 9px;
+    height: 9px;
+}
+.err-msg{
+    background:none !important;
+}
+
+#rss1li1,#rss1li2,#rss1li3,#rss1li4,#rss1li5,#rss1li6{
+    cursor: pointer;
+    line-height:29px;
+}
+
+.z1 a{
+    line-height:18px;
+    vertical-align: top;
+}
+ol, ul {list-style: none;}
+:link, :visited , ins {text-decoration: none;}
+a,a:visited{text-decoration: none; color: #333333;}
+a:hover{ text-decoration: none; }
